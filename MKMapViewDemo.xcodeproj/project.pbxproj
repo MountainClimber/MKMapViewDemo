@@ -14,6 +14,7 @@
 		3FC2C0541A361D80003D60E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC2C0531A361D80003D60E7 /* Images.xcassets */; };
 		3FC2C0571A361D80003D60E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC2C0551A361D80003D60E7 /* LaunchScreen.xib */; };
 		3FC2C0631A361D80003D60E7 /* MKMapViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2C0621A361D80003D60E7 /* MKMapViewDemoTests.m */; };
+		3FC2C06D1A361DBD003D60E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC2C06C1A361DBD003D60E7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3FC2C05C1A361D80003D60E7 /* MKMapViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKMapViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC2C0611A361D80003D60E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FC2C0621A361D80003D60E7 /* MKMapViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMapViewDemoTests.m; sourceTree = "<group>"; };
+		3FC2C06C1A361DBD003D60E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC2C06D1A361DBD003D60E7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		3FC2C03A1A361D7F003D60E7 = {
 			isa = PBXGroup;
 			children = (
+				3FC2C06C1A361DBD003D60E7 /* MapKit.framework */,
 				3FC2C0451A361D80003D60E7 /* MKMapViewDemo */,
 				3FC2C05F1A361D80003D60E7 /* MKMapViewDemoTests */,
 				3FC2C0441A361D80003D60E7 /* Products */,
