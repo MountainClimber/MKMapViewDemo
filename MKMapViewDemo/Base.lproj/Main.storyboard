@@ -21,83 +21,87 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Occ-0e-o38">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="Current Location" id="URy-mf-kMS"/>
+                                    <barButtonItem title="Current Location" id="URy-mf-kMS">
+                                        <connections>
+                                            <action selector="zoomToCurrentLocation:" destination="vXZ-lx-hvc" id="uOW-Zk-X13"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgR-Ow-T57">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="CgR-Ow-T57">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fWF-iv-tSk">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="OOg-8d-Doi">
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="FZa-iR-7oP"/>
+                                    <constraint firstAttribute="width" constant="198" id="Qfm-D8-lYW"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Satellite"/>
-                                    <segment title="Standard"/>
-                                    <segment title="Hybride"/>
+                                    <segment title="standard"/>
+                                    <segment title="satellite"/>
+                                    <segment title="hybrid"/>
                                 </segments>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="FZa-iR-7oP"/>
+                                        <exclude reference="Qfm-D8-lYW"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="FZa-iR-7oP"/>
+                                        <include reference="Qfm-D8-lYW"/>
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="setMapType:" destination="vXZ-lx-hvc" eventType="valueChanged" id="OPO-5S-hDT"/>
+                                    <action selector="setMapType:" destination="vXZ-lx-hvc" eventType="valueChanged" id="9ks-nP-NXX"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Occ-0e-o38" firstAttribute="top" secondItem="fWF-iv-tSk" secondAttribute="bottom" constant="19" id="45T-TA-6wQ"/>
-                            <constraint firstItem="Occ-0e-o38" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="BzM-lP-PuC"/>
-                            <constraint firstAttribute="trailing" secondItem="CgR-Ow-T57" secondAttribute="trailing" id="CEJ-II-ZOO"/>
-                            <constraint firstItem="CgR-Ow-T57" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Cu5-4W-9Jy"/>
-                            <constraint firstItem="fWF-iv-tSk" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="WNi-rz-gFU"/>
-                            <constraint firstItem="Occ-0e-o38" firstAttribute="leading" secondItem="CgR-Ow-T57" secondAttribute="leading" id="ce5-dr-0wU"/>
-                            <constraint firstItem="Occ-0e-o38" firstAttribute="top" secondItem="CgR-Ow-T57" secondAttribute="bottom" id="g2g-90-4U3"/>
-                            <constraint firstItem="CgR-Ow-T57" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="goq-xN-9Eg"/>
-                            <constraint firstItem="Occ-0e-o38" firstAttribute="trailing" secondItem="CgR-Ow-T57" secondAttribute="trailing" id="zTf-O3-Ikl"/>
+                            <constraint firstItem="CgR-Ow-T57" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1Ji-JC-M84"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OOg-8d-Doi" secondAttribute="trailing" constant="48" id="AdU-fx-w54"/>
+                            <constraint firstItem="Occ-0e-o38" firstAttribute="trailing" secondItem="CgR-Ow-T57" secondAttribute="trailing" id="Gl4-rd-Vf5"/>
+                            <constraint firstAttribute="trailing" secondItem="Occ-0e-o38" secondAttribute="trailing" id="L8n-k1-f71"/>
+                            <constraint firstItem="Occ-0e-o38" firstAttribute="top" secondItem="OOg-8d-Doi" secondAttribute="bottom" constant="29" id="Qcc-gv-UPg"/>
+                            <constraint firstItem="CgR-Ow-T57" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="RF6-gv-zc5"/>
+                            <constraint firstItem="Occ-0e-o38" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="Zez-fH-cUf"/>
+                            <constraint firstItem="CgR-Ow-T57" firstAttribute="leading" secondItem="Occ-0e-o38" secondAttribute="leading" id="hIV-rL-FP4"/>
+                            <constraint firstItem="Occ-0e-o38" firstAttribute="top" secondItem="CgR-Ow-T57" secondAttribute="bottom" id="vBT-bd-aAg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Occ-0e-o38"/>
                                 <exclude reference="CgR-Ow-T57"/>
-                                <exclude reference="fWF-iv-tSk"/>
+                                <exclude reference="OOg-8d-Doi"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="45T-TA-6wQ"/>
-                                <exclude reference="BzM-lP-PuC"/>
-                                <exclude reference="ce5-dr-0wU"/>
-                                <exclude reference="g2g-90-4U3"/>
-                                <exclude reference="zTf-O3-Ikl"/>
-                                <exclude reference="WNi-rz-gFU"/>
-                                <exclude reference="CEJ-II-ZOO"/>
-                                <exclude reference="Cu5-4W-9Jy"/>
-                                <exclude reference="goq-xN-9Eg"/>
+                                <exclude reference="Gl4-rd-Vf5"/>
+                                <exclude reference="L8n-k1-f71"/>
+                                <exclude reference="Qcc-gv-UPg"/>
+                                <exclude reference="Zez-fH-cUf"/>
+                                <exclude reference="vBT-bd-aAg"/>
+                                <exclude reference="AdU-fx-w54"/>
+                                <exclude reference="1Ji-JC-M84"/>
+                                <exclude reference="RF6-gv-zc5"/>
+                                <exclude reference="hIV-rL-FP4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Occ-0e-o38"/>
                                 <include reference="CgR-Ow-T57"/>
-                                <include reference="fWF-iv-tSk"/>
+                                <include reference="OOg-8d-Doi"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="45T-TA-6wQ"/>
-                                <include reference="BzM-lP-PuC"/>
-                                <include reference="ce5-dr-0wU"/>
-                                <include reference="g2g-90-4U3"/>
-                                <include reference="zTf-O3-Ikl"/>
-                                <include reference="WNi-rz-gFU"/>
-                                <include reference="CEJ-II-ZOO"/>
-                                <include reference="Cu5-4W-9Jy"/>
-                                <include reference="goq-xN-9Eg"/>
+                                <include reference="Gl4-rd-Vf5"/>
+                                <include reference="L8n-k1-f71"/>
+                                <include reference="Qcc-gv-UPg"/>
+                                <include reference="Zez-fH-cUf"/>
+                                <include reference="vBT-bd-aAg"/>
+                                <include reference="AdU-fx-w54"/>
+                                <include reference="1Ji-JC-M84"/>
+                                <include reference="RF6-gv-zc5"/>
+                                <include reference="hIV-rL-FP4"/>
                             </mask>
                         </variation>
                     </view>

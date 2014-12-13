@@ -15,6 +15,7 @@
 		3FC2C0571A361D80003D60E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC2C0551A361D80003D60E7 /* LaunchScreen.xib */; };
 		3FC2C0631A361D80003D60E7 /* MKMapViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2C0621A361D80003D60E7 /* MKMapViewDemoTests.m */; };
 		3FC2C06D1A361DBD003D60E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC2C06C1A361DBD003D60E7 /* MapKit.framework */; };
+		3FC2C0A21A3C9E4F003D60E7 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2C0A11A3C9E4F003D60E7 /* CustomAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		3FC2C0611A361D80003D60E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FC2C0621A361D80003D60E7 /* MKMapViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMapViewDemoTests.m; sourceTree = "<group>"; };
 		3FC2C06C1A361DBD003D60E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3FC2C0A01A3C9E4F003D60E7 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		3FC2C0A11A3C9E4F003D60E7 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				3FC2C04B1A361D80003D60E7 /* AppDelegate.m */,
 				3FC2C04D1A361D80003D60E7 /* ViewController.h */,
 				3FC2C04E1A361D80003D60E7 /* ViewController.m */,
+				3FC2C0A01A3C9E4F003D60E7 /* CustomAnnotation.h */,
+				3FC2C0A11A3C9E4F003D60E7 /* CustomAnnotation.m */,
 				3FC2C0501A361D80003D60E7 /* Main.storyboard */,
 				3FC2C0531A361D80003D60E7 /* Images.xcassets */,
 				3FC2C0551A361D80003D60E7 /* LaunchScreen.xib */,
@@ -226,6 +231,7 @@
 				3FC2C04F1A361D80003D60E7 /* ViewController.m in Sources */,
 				3FC2C04C1A361D80003D60E7 /* AppDelegate.m in Sources */,
 				3FC2C0491A361D80003D60E7 /* main.m in Sources */,
+				3FC2C0A21A3C9E4F003D60E7 /* CustomAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				3FC2C0681A361D80003D60E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FC2C0691A361D80003D60E7 /* Build configuration list for PBXNativeTarget "MKMapViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				3FC2C06B1A361D80003D60E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
