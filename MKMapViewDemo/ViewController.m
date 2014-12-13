@@ -72,6 +72,7 @@
 //#define kBorder 0
   //  annotationImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kWidth, kHeight)];
     // If it's the user location, just return nil.
+    NSLog(@"viewForAnnotation is called");
     if ([annotation isKindOfClass:[MKUserLocation class]])
         return nil;
     
@@ -85,7 +86,18 @@
             // If an existing pin view was not available, create one.
             pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
             pinView.canShowCallout = YES;
-            pinView.image = [UIImage imageNamed:@"santa-claus-7.png"];
+           
+           // UIImage *image = [UIImage imageNamed:@"santa-claus-7.png" ];// scale:0.2 orientation:0];
+            NSString *str=[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"santa-claus-7.png" ];
+            NSLog(@"Path: %@", str);
+            
+            NSData *dataImage = [NSData dataWithContentsOfFile:str];
+        
+            UIImage *image = [UIImage imageWithData:dataImage scale:10];
+                             // ];// scale:0.2 orientation:0];          // image.scale = 0.2;
+           // image.scale = 0.2;
+           // [image resizingMode:0.2];
+            pinView.image = image;
             
             pinView.calloutOffset = CGPointMake(0, 32);
             

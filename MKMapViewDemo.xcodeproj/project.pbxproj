@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23978F7A1A3CC15900B9F145 /* santa-claus-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 23978F791A3CC15900B9F145 /* santa-claus-7.png */; };
 		3FC2C0491A361D80003D60E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2C0481A361D80003D60E7 /* main.m */; };
 		3FC2C04C1A361D80003D60E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2C04B1A361D80003D60E7 /* AppDelegate.m */; };
 		3FC2C04F1A361D80003D60E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2C04E1A361D80003D60E7 /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23978F791A3CC15900B9F145 /* santa-claus-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "santa-claus-7.png"; sourceTree = "<group>"; };
 		3FC2C0431A361D80003D60E7 /* MKMapViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKMapViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC2C0471A361D80003D60E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FC2C0481A361D80003D60E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		3FC2C0451A361D80003D60E7 /* MKMapViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				23978F791A3CC15900B9F145 /* santa-claus-7.png */,
 				3FC2C04A1A361D80003D60E7 /* AppDelegate.h */,
 				3FC2C04B1A361D80003D60E7 /* AppDelegate.m */,
 				3FC2C04D1A361D80003D60E7 /* ViewController.h */,
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23978F7A1A3CC15900B9F145 /* santa-claus-7.png in Resources */,
 				3FC2C0521A361D80003D60E7 /* Main.storyboard in Resources */,
 				3FC2C0571A361D80003D60E7 /* LaunchScreen.xib in Resources */,
 				3FC2C0541A361D80003D60E7 /* Images.xcassets in Resources */,
